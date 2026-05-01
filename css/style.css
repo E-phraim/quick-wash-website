@@ -486,6 +486,9 @@ Button Core
 .banner {
     padding-bottom: 145px !important;
 }
+.banner-long-text{
+    width: 725.486px !important;
+}
 
 /* Sticky state: only the bottom bar shows */
 .pq-header-sticky ~ .banner,
@@ -5392,7 +5395,7 @@ Custom Css
 }
 
 .pq-location-media {
-    background-image: url(../image/contact-us/h3-contact.jpg);
+    background-image: url(../image/contact-us/Contact--1436x1358.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5548,9 +5551,16 @@ Custom Css
 
 @media (max-width: 320px) {
     .mobile-hero {
-        margin-top: -275px;
+        margin-top: -340px;
         padding-top: 90px;
         min-height: 460px;
+    }
+    .main-logo-top{
+        height: 60px !important;
+        margin: 0px;
+    }
+    .about-us{
+        margin-top: -160px;
     }
 }
 
