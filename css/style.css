@@ -5203,6 +5203,15 @@ About
 ==================================================*/
 
 /*===== about-us =====*/
+.about-breadcrumb {
+    color: var(--white-color);
+    background-image: url(../image/about-us/AboutUs-2560x853-Banner.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-bottom: 130px;
+    margin: 0;
+}
 
 .pq-about-info-title {
     margin-bottom: 30px;
