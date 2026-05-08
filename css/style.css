@@ -1219,7 +1219,7 @@ Breadcrumb
 }
 
 .pq-breadcrumb .pq-breadcrumb-title h1 {
-  color: var(--white-color);
+  /* color: var(--white-color); */
   font-size: 56px;
   line-height: 64px;
   margin-bottom: 15px;
