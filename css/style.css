@@ -487,7 +487,7 @@ Button Core
   padding-bottom: 145px !important;
 }
 .banner-long-text {
-  width: 725.486px !important;
+  width: 925.486px !important;
 }
 
 /* Sticky state: only the bottom bar shows */
@@ -1216,10 +1216,26 @@ Breadcrumb
   background-repeat: no-repeat;
   padding-bottom: 130px;
   margin: 0;
+  position: relative; /* needed for ::before to position against */
+}
+
+.breadcrumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55); /* adjust 0.55 to taste */
+  z-index: 0;
+}
+
+/* Push all breadcrumb content above the overlay */
+.breadcrumb .container {
+  position: relative;
+  z-index: 1;
 }
 
 .pq-breadcrumb .pq-breadcrumb-title h1 {
-  /* color: var(--white-color); */
+  color: white;
+  font-weight: 700;
   font-size: 56px;
   line-height: 64px;
   margin-bottom: 15px;
@@ -1368,6 +1384,10 @@ Header
 
 /*============Header Style-1============*/
 
+.header-white{
+  background: white !important;
+}
+
 .pq-header.pq-style-1 {
   background-color: transparent;
   position: absolute;
@@ -1389,7 +1409,7 @@ Header
 /*============Logo============*/
 
 .main-logo-top {
-  height: 120px !important;
+  height: 80px !important;
   margin-left: 3.9rem;
 }
 
