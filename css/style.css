@@ -1,8 +1,7 @@
 /*
-Template: Carcareful - Car Wash HTML Template
-Author: peacefulqode.com
+Author: webtellisense.com
 Version: 1.0
-Design and Developed by: Peacefulqode
+Design and Developed by: Webtellisense
 */
 
 /*================================================
@@ -1309,6 +1308,9 @@ Breadcrumb
 /*==================================================
 Header
 ==================================================*/
+.mobile-num{
+  display: none !important;
+}
 
 .animated {
   animation-duration: 1.25s;
@@ -6178,16 +6180,13 @@ Custom Css
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 70px 24px 60px;
-  min-height: 480px;
-  background-image: url("rev/assets/page-3/banner-bg-h3-01-scaled.jpg");
+  min-height: 100svh; /* full viewport height on mobile */
+  background-image: url('../rev/assets/page-3/banner-bg-h3-01-scaled.jpg');
   background-size: cover;
   background-position: center center;
   position: relative;
-  /* Push down by header height (top bar + nav) */
-  margin-top: 0;
+  padding: 0 24px;
 }
-
 /* The header at mobile is roughly:
    top bar ~45px + collapsed nav ~65px = ~110px
    We use padding-top instead of margin to avoid
@@ -6199,8 +6198,11 @@ Custom Css
   }
 }
 @media (max-width: 768px) {
+  .mobile-num{
+    display: block !important;
+  }
   .mobile-hero {
-    display: flex !important;
+    display: none;
     padding-top: 110px;
     min-height: 520px;
   }
@@ -6214,6 +6216,9 @@ Custom Css
 }
 
 @media (max-width: 425px) {
+  .mobile-num{
+    display: block !important;
+  }
   .mobile-hero {
     margin-top: -415px;
     padding-top: 100px;
@@ -6235,6 +6240,9 @@ Custom Css
 }
 
 @media (max-width: 375px) {
+  .mobile-num{
+    display: block !important;
+  }
   .mobile-hero {
     margin-top: -320px;
     padding-top: 95px;
@@ -6256,6 +6264,9 @@ Custom Css
 }
 
 @media (max-width: 320px) {
+  .mobile-num{
+    display: block !important;
+  }
   .mobile-hero {
     margin-top: -340px;
     padding-top: 90px;
